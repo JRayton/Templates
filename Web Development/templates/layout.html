@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/static/styles/layout/style.css">
+        <link rel="stylesheet" href="/static/styles/{{ directory }}/style.css">
+        {% if script %}
+        <script defer src="/static/scripts/{{ directory }}/script.js"></script>
+        {% endif %}
+        <!-- Change to minified versions above when finished. -->
+        <title>{{ title }}</title>
+    </head>
+    <body>
+        <header>
+            <!-- HTML goes here -->
+        </header>
+        {% block content %}
+        {% endblock %}
+        <footer>
+            <!-- HTML goes here -->
+        </footer>
+    </body>
+</html>
